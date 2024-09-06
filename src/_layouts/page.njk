@@ -1,0 +1,28 @@
+---
+layout: "base"
+---
+
+<section class="section">
+    <div class="content">
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-two-thirds">
+                <h1 class="title has-text-info">{{ title }}</h1>
+                {{ content | safe }}
+                {% if title == "Churches" %}
+                {% include "partials/church-grid.njk" %}
+                {% endif %}
+                {% if title == "Ministries" %}
+                {% include "partials/ministry-grid.njk" %}
+                {% endif %}
+                {% if title == "Contact" %}
+                {% include "partials/contactForm.njk" %}
+                {% endif %}
+                {% if title == "Search" %}
+                {% include "partials/search.njk" %}
+                {% endif %}
+            </div>
+            <div class="column"></div>
+        </div>
+    </div>
+</section>

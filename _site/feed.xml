@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title>MCEA news and affairs</title>
+	<subtitle>All the latest posts with news and event information for churches and ministries affiliated to MCEA.</subtitle>
+	<link href="/feed.xml" rel="self"/>
+	<link href="https://www.mcea.org.uk"/>
+	<updated>2024-09-05T11:45:55Z</updated>
+	<id>https://www.mcea.org.uk</id>
+	<author>
+		<name>Simon Measures</name>
+		<email>enquiries@mcea.org.uk</email>
+	</author>
+	
+	
+	<entry>
+		<title>Home</title>
+		<description>Introduction to the new website</description>
+		<link href="https://www.mcea.org.uk/"/>
+		<updated>2024-09-05T11:25:54Z</updated>
+		<id>https://www.mcea.org.uk/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;assets/images/coffee.png&quot; alt=&quot;hero image&quot;&gt;&lt;/p&gt;
+&lt;h1&gt;John Walton&lt;/h1&gt;
+&lt;p&gt;Template made with &lt;a href=&quot;https://www.11ty.io/&quot;&gt;Eleventy&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Churches</title>
+		<description>List of participating churches</description>
+		<link href="https://www.mcea.org.uk/churches/"/>
+		<updated>2024-09-05T11:25:54Z</updated>
+		<id>https://www.mcea.org.uk/churches/</id>
+		<content type="html">&lt;h2&gt;Participating Churches&lt;/h2&gt;
+&lt;p&gt;The churches in the list below all send representatives to our bi-monthly meetings.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>About</title>
+		<description>Information about the role of MCEA in the local Christian community</description>
+		<link href="https://www.mcea.org.uk/about/"/>
+		<updated>2024-09-05T11:25:54Z</updated>
+		<id>https://www.mcea.org.uk/about/</id>
+		<content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem error numquam reiciendis blanditiis ea! Molestias iste beatae rerum id. Doloribus, aliquid enim? Veniam soluta fuga incidunt. Consequatur, eum voluptatem? Corrupti, minus maxime! Expedita tempore molestiae ipsum iste ipsam voluptate nulla illo eius perferendis deleniti, aperiam nemo quibusdam dolor nisi vitae? Voluptatibus fuga, qui voluptas dolor impedit nobis repudiandae modi, possimus delectus assumenda fugiat. Deleniti laborum suscipit voluptate reprehenderit quia ipsa quibusdam corrupti debitis impedit nihil eligendi quos aspernatur veniam ipsam, minima delectus dolorem perspiciatis nulla magni. Repellendus at, hic laboriosam explicabo facilis ab, cum voluptas blanditiis dolore, natus et quos.&lt;/p&gt;
+&lt;h2&gt;Development&lt;/h2&gt;
+&lt;p&gt;Eius eum voluptatum mollitia dolor nisi debitis obcaecati deleniti aperiam reprehenderit nulla eos, excepturi itaque inventore, a perspiciatis nobis voluptates dignissimos quod amet saepe veritatis odio aliquam. Tenetur, vitae beatae magni quaerat maiores, in corrupti veniam sapiente illum non voluptatibus omnis similique est dignissimos sit asperiores accusantium dolor possimus illo, eveniet expedita obcaecati iste facere facilis. Possimus veniam repellat ex ab quod praesentium fuga ea voluptatem ipsum, aspernatur laudantium nihil incidunt nemo aut asperiores cupiditate, provident libero facilis nostrum sed cum quos alias dolores! Eos, libero! Odio autem sit molestias voluptatibus laboriosam, reprehenderit sapiente incidunt corporis, minus deserunt, architecto maxime.&lt;/p&gt;
+&lt;p&gt;Aliquam, doloremque? Similique, nihil voluptate beatae asperiores fugiat quibusdam. Dolorem quibusdam esse accusamus repellendus officia vitae nobis aliquid facilis officiis et autem incidunt, nihil perferendis eaque beatae ad, saepe debitis exercitationem possimus rerum quidem. Veritatis explicabo possimus quisquam labore velit dolore saepe, suscipit cumque fugit voluptatum nam modi soluta. Ducimus voluptatum quisquam ad ipsa sunt consequuntur. Aperiam, ea ipsum pariatur neque sapiente animi earum voluptatibus, voluptate ratione impedit odit quia. Voluptas veniam blanditiis quod delectus totam nemo corporis, itaque laborum quasi fuga necessitatibus doloribus. Harum tenetur consequatur repellat eos incidunt cum ab sit et debitis, maxime consectetur hic? Aliquid, sint.&lt;/p&gt;
+&lt;p&gt;Dolore alias omnis recusandae ipsum enim corporis ad distinctio quos, voluptas incidunt vitae nulla dolor aliquid architecto nemo ex quibusdam a. Laboriosam cumque corporis ut porro sunt a labore illum? Reiciendis minus assumenda nemo aspernatur suscipit iste, non ut. Autem, eum! Quae itaque sequi ab nihil dignissimos ut et inventore mollitia temporibus ipsam ea earum nam rem animi harum ad minima ex cumque fuga fugiat placeat libero, facere culpa explicabo. Exercitationem doloribus temporibus laboriosam dolores ut culpa vitae at, adipisci repellat incidunt odit repellendus suscipit, dicta, modi nisi ratione ducimus harum deleniti provident porro cupiditate iure rem aperiam? Nulla, accusamus.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Cheltenham Street Pastors</title>
+		<description>Find out more about Street Pastors and how you can help.</description>
+		<link href="https://www.mcea.org.uk/cheltenham-street-pastors/"/>
+		<updated>2023-09-22T00:00:00Z</updated>
+		<id>https://www.mcea.org.uk/cheltenham-street-pastors/</id>
+		<content type="html">&lt;h1&gt;Join The Street Pastors&lt;/h1&gt;
+&lt;p&gt;The Street Pastors will be back out on the streets of Cheltenham. In order to continue the providing the service, we need more volunteers to join our team. If you, or any member of your church would be interested in joining the team, please complete the recruitment information on this link &lt;a href=&quot;https://www.streetpastors.org/about-us/the-street-pastors-training-programme/&quot;&gt;Join Street Pastors&lt;/a&gt; or follow the link on the Street Pastors website.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Anna Chaplaincy</title>
+		<description>Cheltenham and Bishop&#39;s Cleeve Anna Chaplaincy for older people</description>
+		<link href="https://www.mcea.org.uk/anna-chaplaincy/"/>
+		<updated>2023-09-22T00:00:00Z</updated>
+		<id>https://www.mcea.org.uk/anna-chaplaincy/</id>
+		<content type="html">&lt;h2&gt;WHO WE ARE&lt;/h2&gt;
+&lt;p&gt;CaBiC is an interdenominational charity being set up to support and coordinate ministry to older people in Cheltenham and Bishop&#39;s Cleeve as part of the national Gift of Years Anna Chaplaincy scheme.&lt;/p&gt;
+&lt;p&gt;CaBiC is a registered Charitable Incorporated Organisation (1183787)&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>South Park Baptist Church</title>
+		<description>Find out more about South Park Baptist Church and their leadership.</description>
+		<link href="https://www.mcea.org.uk/south-park-baptist-church/"/>
+		<updated>2023-09-15T00:00:00Z</updated>
+		<id>https://www.mcea.org.uk/south-park-baptist-church/</id>
+		<content type="html">&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel distinctio sequi nam voluptatibus animi obcaecati facere inventore rerum quia, ad placeat accusantium rem possimus quos, reiciendis exercitationem repellat? Eos, doloremque non? Nostrum quo cumque perspiciatis eveniet error fugit saepe ipsa nobis ad deleniti, aspernatur incidunt tempore reprehenderit sapiente! Eius!&lt;/p&gt;
+&lt;p&gt;Ducimus dolor eligendi cum aspernatur mollitia veniam, molestias modi reprehenderit nihil harum deleniti a dicta assumenda aut id, neque ut. Aliquam enim neque dolorum minus iste officia facere. Dolorum iure deleniti corporis quidem aliquam nesciunt, delectus ipsum sit quos porro iusto, ipsa impedit labore soluta mollitia nam quam fugit blanditiis.&lt;/p&gt;
+&lt;p&gt;Temporibus, reiciendis aspernatur officiis corporis, harum quod rem nostrum quidem ratione ab quae, quam velit? Veniam corrupti doloremque quidem vero delectus, id, dolores tempora optio recusandae consectetur dolorem, maiores dolor placeat porro quod voluptatibus saepe expedita! Earum fuga, eum beatae quae quam veniam laborum expedita velit aut modi et natus!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Holy Trinity Church</title>
+		<description>Find out more about Holy Trinity Church and their leadership.</description>
+		<link href="https://www.mcea.org.uk/holy-trinity-church/"/>
+		<updated>2023-09-14T00:00:00Z</updated>
+		<id>https://www.mcea.org.uk/holy-trinity-church/</id>
+		<content type="html">&lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione exercitationem adipisci optio inventore eaque deleniti porro tempore eveniet pariatur, voluptatem dolore officia aperiam! At quidem possimus aut quis porro soluta veniam nulla, nesciunt amet. Atque at quasi doloribus maxime odio impedit quam error. Reprehenderit porro ex dolores nemo fuga cupiditate?&lt;/p&gt;
+&lt;p&gt;Nihil, doloremque quaerat. Facere quod rem ab soluta deleniti tempore sed, corporis, quae atque qui quia inventore ipsam eaque totam sapiente explicabo fuga ex corrupti omnis quibusdam veniam, sit ullam nam! Sed quaerat sequi omnis illum possimus, beatae provident quod est eius. Vero, quae. Debitis eveniet consequatur pariatur quas repellat?&lt;/p&gt;
+&lt;p&gt;Minima, facilis quam? Nisi corrupti mollitia, rerum velit quos accusamus ratione rem ducimus non, earum, laboriosam aut excepturi vitae sed. Impedit maxime id corporis, temporibus doloremque debitis. Suscipit unde optio minus officia doloribus ipsa nisi fugiat! Quod adipisci debitis beatae hic explicabo autem expedita, eius ipsam nihil nemo dicta assumenda?&lt;/p&gt;
+</content>
+	</entry>
+</feed>

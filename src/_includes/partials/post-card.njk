@@ -1,0 +1,22 @@
+
+<div class="column is-5-tablet is-4-desktop">
+  <div class="card shadow-lg is-rounded">
+    <div class="card-image is-overflow-hidden">
+      <div class="image has-text-centered">
+        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt}}">
+      </div>
+    </div>
+    <div class="card-content">
+      <p class="card-header-title">
+        {{ post.data.title }}
+      </p>
+      <div class="content">
+      {{ post.data.description }}
+      </div>
+    </div>
+    <footer class="card-footer">
+      <a href="{{ post.url }}" class="card-footer-item"><button class="button is-fullwidth is-success"><p class="is-uppercase">View</p></button></a>
+    </footer>
+    </a>
+  </div>
+</div>

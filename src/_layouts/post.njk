@@ -1,0 +1,22 @@
+---
+layout: "base"
+---
+
+<section class="section">
+    <div class="content">
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-two-thirds">
+                <h1 class="title has-text-info">{{ title }}</h1>
+                <p class="subtitle is-6">
+                    Published on: <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>
+                </p>
+                <figure class="image">
+                    <img src="{{ image | safe }}" alt="{{ imageAlt }}" style="height:{{ imageHeight }}; width:{{ imageWidth }}">
+                </figure>
+                {{ content | safe }}
+            </div>
+            <div class="column"></div>
+        </div>
+    </div>
+</section>

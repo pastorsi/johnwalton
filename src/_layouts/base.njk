@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="/css/customiseStyle.css" />
+        {% if title == "Search" %}
+            <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+        {% endif %}
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icon-96x96.png" />
+        <title>New Website - {{title}}</title>
+    </head> 
+    <body>
+        {% include "_navigation.njk" %}
+        <main
+            {% if (title !== "Cookie Policy") and (title !== "Privacy Policy") and (title !== "Contact") and (title !== "Thank you") and (title !== "Search") %} 
+                data-pagefind-body
+            {% endif %}
+        >
+            {{ content | safe }}
+        </main>
+        {% include "_footer.njk" %}
+        <script src="/assets/js/mobilemenu.js"></script>
+        <!-- <script id="cookieyes" src="https://cdn-cookieyes.com/client_data/1dd336d8c127db781bfbfe32/script.js" async defer></script> -->
+    </body>
+</html>
+

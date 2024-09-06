@@ -1,0 +1,16 @@
+---
+layout: "base"
+---
+
+<section class="section">
+    <div class="content">
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-two-thirds">
+                {{ content | safe }}
+                {% include "partials/post-grid.njk" %}
+            </div>
+            <div class="column"></div>
+        </div>
+    </div>
+</section>

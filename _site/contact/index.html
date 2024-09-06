@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="/css/customiseStyle.css" />
+        
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icon-96x96.png" />
+        <title>New Website - Contact</title>
+    </head> 
+    <body>
+        <nav class="navbar has-shadow is-success px-5">
+        <!-- logo / brand -->
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                <figure class="image is-64x64">
+                    <img src="/assets/images/logo.png" alt="Site logo" style="max-height: 70px;" class="py-2 px-2">
+                </figure>
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                
+                <a href="/index/" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon has-text-warning">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </span>
+                </a>
+                
+                <a href="/about/" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon has-text-warning">
+                            <i class="fas fa-address-card" aria-hidden="true"></i>
+                        </span>
+                        <span>About</span>
+                    </span>
+                </a>
+                
+                <a href="/churches/" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon has-text-warning">
+                            <i class="fas fa-church" aria-hidden="true"></i>
+                        </span>
+                        <span>Churches</span>
+                    </span>
+                </a>
+                
+                <a href="/contact/" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon has-text-warning">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </span>
+                        <span>Contact</span>
+                    </span>
+                </a>
+                
+                <a href="/search/" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon has-text-warning">
+                            <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                        </span>
+                        <span>Search</span>
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+    </nav>
+    
+        <main
+            
+        >
+            
+<section class="section">
+    <div class="content">
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-two-thirds">
+                <h1 class="title has-text-info">Contact</h1>
+                <h2>Contact Form</h2>
+<p>Your enquiry is welcome.</p>
+
+                
+                
+                
+                <form 
+            id="contact_form"
+            ref="form"
+            method="post"
+            action="https://api.web3forms.com/submit"
+>
+<div class="field">
+  <input 
+    type="hidden"  
+    name="access_key"
+    value=""
+  />
+  <input 
+    type="hidden"  
+    name="subject"
+    value="MCEA website - new message submission"
+  />
+  <input 
+    type="hidden"  
+    name="redirect"
+    value="https://www.mcea.org.uk/contact"
+  />
+</div>
+
+  <div class="field">
+    <label class="label">Name</label>
+    <div class="control">
+      
+        <input
+          class="input"
+          type="text"
+          name="name"
+          placeholder="Your name"
+           required="required"
+           pattern="^[a-zA-Z ]+$"
+        />
+      
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Email</label>
+    <div class="control">
+      
+        <input
+          class="input"
+          type="email"
+          name="email"
+          placeholder="e.g. alexsmith@gmail.com"
+           required="required"
+          
+        />
+      
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Message</label>
+    <div class="control">
+      
+        <textarea
+          class="textarea"
+          name="message"
+          placeholder="Please write your message here"
+           required="required"
+           minlength="5"
+        ></textarea>
+      
+    </div>
+  </div>
+
+  <div class="h-captcha" data-captcha="true"></div>
+  <button class="button is-primary" type="submit">Send</button>
+</form>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+                
+                
+            </div>
+            <div class="column"></div>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+      </br>&copy; Simon Measures 2024
+    </p>
+  </div>
+</footer>
+        <script src="/assets/js/mobilemenu.js"></script>
+        <!-- <script id="cookieyes" src="https://cdn-cookieyes.com/client_data/1dd336d8c127db781bfbfe32/script.js" async defer></script> -->
+    </body>
+</html>
+
