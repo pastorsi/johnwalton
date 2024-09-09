@@ -4,7 +4,7 @@
 	<subtitle>All the latest posts with news and event information for churches and ministries affiliated to MCEA.</subtitle>
 	<link href="/feed.xml" rel="self"/>
 	<link href="https://www.mcea.org.uk"/>
-	<updated>2024-09-05T11:45:55Z</updated>
+	<updated>2024-09-09T14:32:08Z</updated>
 	<id>https://www.mcea.org.uk</id>
 	<author>
 		<name>Simon Measures</name>
@@ -16,10 +16,10 @@
 		<title>Home</title>
 		<description>Introduction to the new website</description>
 		<link href="https://www.mcea.org.uk/"/>
-		<updated>2024-09-05T11:25:54Z</updated>
+		<updated>2024-09-06T19:48:34Z</updated>
 		<id>https://www.mcea.org.uk/</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;assets/images/coffee.png&quot; alt=&quot;hero image&quot;&gt;&lt;/p&gt;
-&lt;h1&gt;John Walton&lt;/h1&gt;
+&lt;h1&gt;New Website - John Walton&lt;/h1&gt;
 &lt;p&gt;Template made with &lt;a href=&quot;https://www.11ty.io/&quot;&gt;Eleventy&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
@@ -28,7 +28,7 @@
 		<title>Churches</title>
 		<description>List of participating churches</description>
 		<link href="https://www.mcea.org.uk/churches/"/>
-		<updated>2024-09-05T11:25:54Z</updated>
+		<updated>2024-09-06T19:48:34Z</updated>
 		<id>https://www.mcea.org.uk/churches/</id>
 		<content type="html">&lt;h2&gt;Participating Churches&lt;/h2&gt;
 &lt;p&gt;The churches in the list below all send representatives to our bi-monthly meetings.&lt;/p&gt;
@@ -39,7 +39,7 @@
 		<title>About</title>
 		<description>Information about the role of MCEA in the local Christian community</description>
 		<link href="https://www.mcea.org.uk/about/"/>
-		<updated>2024-09-05T11:25:54Z</updated>
+		<updated>2024-09-06T19:48:34Z</updated>
 		<id>https://www.mcea.org.uk/about/</id>
 		<content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem error numquam reiciendis blanditiis ea! Molestias iste beatae rerum id. Doloribus, aliquid enim? Veniam soluta fuga incidunt. Consequatur, eum voluptatem? Corrupti, minus maxime! Expedita tempore molestiae ipsum iste ipsam voluptate nulla illo eius perferendis deleniti, aperiam nemo quibusdam dolor nisi vitae? Voluptatibus fuga, qui voluptas dolor impedit nobis repudiandae modi, possimus delectus assumenda fugiat. Deleniti laborum suscipit voluptate reprehenderit quia ipsa quibusdam corrupti debitis impedit nihil eligendi quos aspernatur veniam ipsam, minima delectus dolorem perspiciatis nulla magni. Repellendus at, hic laboriosam explicabo facilis ab, cum voluptas blanditiis dolore, natus et quos.&lt;/p&gt;
