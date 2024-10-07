@@ -43,6 +43,40 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
     }
 }
 
+// style adjustments following the Sutton Cox-inspired minimalist design
+
+// Typography adjustments
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  font-weight: 700;
+}
+
+body, p {
+  font-family: "Nunito", sans-serif;
+  color: #555;
+  line-height: 1.7;
+}
+
+// Section spacing
+.section {
+  padding: 2rem 0; // Add generous spacing between sections for clarity
+}
+
+// Image styling
+figure.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; // Add some rounding to soften the visuals
+}
+
+// Layout adjustments for main content
+.column.is-half {
+  padding: 1.5rem;
+}
+
+// Main menu
+
 // Mobile drop-down menu styling
 .navbar-item.has-dropdown:hover .navbar-dropdown {
     display: block;

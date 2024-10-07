@@ -2,6 +2,8 @@
 layout: "base"
 ---
 
+{% set images = images.about %}
+
 <section class="section">
     <div class="content">
         <div class="columns">
@@ -9,12 +11,25 @@ layout: "base"
             <div class="column is-two-thirds">
                 <h1 class="title has-text-info">{{ title }}</h1>
                 {{ content | safe }}
-                {% if title == "Churches" %}
-                {% include "partials/church-grid.njk" %}
-                {% endif %}
-                {% if title == "Ministries" %}
-                {% include "partials/ministry-grid.njk" %}
-                {% endif %}
+                {% if title == "About" %}
+                    <!-- Loop through sections -->
+                    {% for section in sections %}
+                    <div class="section">
+                        <h2 class="subtitle">{{ section.title }}</h2>
+
+                        <!-- Use images from JSON -->
+                        {% set imagePath = images[section.title | slugify] %}
+                        {% if imagePath %}
+                        <figure class="image">
+                            <img src="{{ imagePath }}" alt="{{ section.title }} Image">
+                        </figure>
+                        {% endif %}
+
+                        <!-- Section Content -->
+                        <p>{{ section.content }}</p>
+                    </div>
+                    {% endfor %}
+                {% endif %}                
                 {% if title == "Contact" %}
                 {% include "partials/contactForm.njk" %}
                 {% endif %}

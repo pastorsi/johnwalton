@@ -4,7 +4,7 @@
 	<subtitle>All the latest posts with news and event information for churches and ministries affiliated to MCEA.</subtitle>
 	<link href="/feed.xml" rel="self"/>
 	<link href="https://www.mcea.org.uk"/>
-	<updated>2024-09-25T19:41:12Z</updated>
+	<updated>2024-10-07T16:03:28Z</updated>
 	<id>https://www.mcea.org.uk</id>
 	<author>
 		<name>Simon Measures</name>
@@ -19,7 +19,7 @@
 		<updated>2024-09-06T19:48:34Z</updated>
 		<id>https://www.mcea.org.uk/</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;assets/images/coffee.png&quot; alt=&quot;hero image&quot;&gt;&lt;/p&gt;
-&lt;h1&gt;New Website - John Walton&lt;/h1&gt;
+&lt;h2&gt;New Website - John Walton&lt;/h2&gt;
 &lt;p&gt;Template made with &lt;a href=&quot;https://www.11ty.io/&quot;&gt;Eleventy&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
@@ -37,17 +37,11 @@
 	
 	<entry>
 		<title>About</title>
-		<description>Information about the role of MCEA in the local Christian community</description>
+		<description>Learn more about John Walton&#39;s services.</description>
 		<link href="https://www.mcea.org.uk/about/"/>
 		<updated>2024-09-06T19:48:34Z</updated>
 		<id>https://www.mcea.org.uk/about/</id>
-		<content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem error numquam reiciendis blanditiis ea! Molestias iste beatae rerum id. Doloribus, aliquid enim? Veniam soluta fuga incidunt. Consequatur, eum voluptatem? Corrupti, minus maxime! Expedita tempore molestiae ipsum iste ipsam voluptate nulla illo eius perferendis deleniti, aperiam nemo quibusdam dolor nisi vitae? Voluptatibus fuga, qui voluptas dolor impedit nobis repudiandae modi, possimus delectus assumenda fugiat. Deleniti laborum suscipit voluptate reprehenderit quia ipsa quibusdam corrupti debitis impedit nihil eligendi quos aspernatur veniam ipsam, minima delectus dolorem perspiciatis nulla magni. Repellendus at, hic laboriosam explicabo facilis ab, cum voluptas blanditiis dolore, natus et quos.&lt;/p&gt;
-&lt;h2&gt;Development&lt;/h2&gt;
-&lt;p&gt;Eius eum voluptatum mollitia dolor nisi debitis obcaecati deleniti aperiam reprehenderit nulla eos, excepturi itaque inventore, a perspiciatis nobis voluptates dignissimos quod amet saepe veritatis odio aliquam. Tenetur, vitae beatae magni quaerat maiores, in corrupti veniam sapiente illum non voluptatibus omnis similique est dignissimos sit asperiores accusantium dolor possimus illo, eveniet expedita obcaecati iste facere facilis. Possimus veniam repellat ex ab quod praesentium fuga ea voluptatem ipsum, aspernatur laudantium nihil incidunt nemo aut asperiores cupiditate, provident libero facilis nostrum sed cum quos alias dolores! Eos, libero! Odio autem sit molestias voluptatibus laboriosam, reprehenderit sapiente incidunt corporis, minus deserunt, architecto maxime.&lt;/p&gt;
-&lt;p&gt;Aliquam, doloremque? Similique, nihil voluptate beatae asperiores fugiat quibusdam. Dolorem quibusdam esse accusamus repellendus officia vitae nobis aliquid facilis officiis et autem incidunt, nihil perferendis eaque beatae ad, saepe debitis exercitationem possimus rerum quidem. Veritatis explicabo possimus quisquam labore velit dolore saepe, suscipit cumque fugit voluptatum nam modi soluta. Ducimus voluptatum quisquam ad ipsa sunt consequuntur. Aperiam, ea ipsum pariatur neque sapiente animi earum voluptatibus, voluptate ratione impedit odit quia. Voluptas veniam blanditiis quod delectus totam nemo corporis, itaque laborum quasi fuga necessitatibus doloribus. Harum tenetur consequatur repellat eos incidunt cum ab sit et debitis, maxime consectetur hic? Aliquid, sint.&lt;/p&gt;
-&lt;p&gt;Dolore alias omnis recusandae ipsum enim corporis ad distinctio quos, voluptas incidunt vitae nulla dolor aliquid architecto nemo ex quibusdam a. Laboriosam cumque corporis ut porro sunt a labore illum? Reiciendis minus assumenda nemo aspernatur suscipit iste, non ut. Autem, eum! Quae itaque sequi ab nihil dignissimos ut et inventore mollitia temporibus ipsam ea earum nam rem animi harum ad minima ex cumque fuga fugiat placeat libero, facere culpa explicabo. Exercitationem doloribus temporibus laboriosam dolores ut culpa vitae at, adipisci repellat incidunt odit repellendus suscipit, dicta, modi nisi ratione ducimus harum deleniti provident porro cupiditate iure rem aperiam? Nulla, accusamus.&lt;/p&gt;
-</content>
+		<content type="html"></content>
 	</entry>
 	
 	<entry>

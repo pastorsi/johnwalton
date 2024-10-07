@@ -1,0 +1,8 @@
+{
+    "about": {
+      "introduction": "/assets/images/introduction.jpg",
+      "development": "/assets/images/development.jpg",
+      "our-story": "/assets/images/our_story.jpg",
+      "our-business-model": "/assets/images/business_model.jpg"
+    }
+  }

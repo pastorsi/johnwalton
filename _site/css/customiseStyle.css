@@ -16,6 +16,32 @@
   color: white;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  font-weight: 700;
+}
+
+body, p {
+  font-family: "Nunito", sans-serif;
+  color: #555;
+  line-height: 1.7;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+figure.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.column.is-half {
+  padding: 1.5rem;
+}
+
 .navbar-item.has-dropdown:hover .navbar-dropdown {
   display: block;
 }
