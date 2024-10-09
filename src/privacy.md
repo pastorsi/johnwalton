@@ -1,5 +1,5 @@
 ---
-layout: "page"
+layout: "notice"
 title: "Privacy Policy"
 description: "This Privacy Policy describes the policies of Mid Cotswold Evangelical Alliance"
 eleventyExcludeFromCollections: true

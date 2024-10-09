@@ -1,5 +1,5 @@
 ---
-layout: "page"
+layout: "notice"
 title: "Cookie Policy"
 description: "This Cookie Policy explains what cookies are and how MCEA use them"
 eleventyExcludeFromCollections: true

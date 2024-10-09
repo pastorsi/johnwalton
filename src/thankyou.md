@@ -1,5 +1,5 @@
 ---
-layout: "page"
+layout: "notice"
 title: "Thank you"
 description: "A thank you in response to a contact form submission"
 eleventyExcludeFromCollections: true

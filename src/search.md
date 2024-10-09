@@ -1,5 +1,5 @@
 ---
-layout: "page"
+layout: "form"
 title: "Search"
 description: "Easily find things on this website with this search"
 eleventyExcludeFromCollections: true
