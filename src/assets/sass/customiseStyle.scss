@@ -94,6 +94,70 @@ figure.image img {
   padding: 1.5rem;
 }
 
+// Page layout - a two-column layout for larger screens and a stacked layout for mobile devices
+
+/* Flex container for images and text */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;  /* Add padding for spacing */
+}
+
+/* Image container - allow it to take up more width */
+.image-container {
+  flex: 0 0 45%;  /* Increase image width to 45% */
+  max-width: 100%;
+}
+
+/* Text container - allow it to take up more width */
+.text-container {
+  flex: 0 0 50%;  /* Increase text width to 50% */
+  padding-left: 1.5rem;  /* Increase spacing between text and image */
+}
+
+/* Ensure images scale well */
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive behavior: Stack on smaller screens */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;  /* Stack the image and text vertically */
+    align-items: flex-start;
+  }
+
+  .image-container, .text-container {
+    width: 100%;  /* Make both image and text take full width */
+    margin-bottom: 1.5rem;
+  }
+
+  .text-container {
+    padding-left: 0;
+  }
+}
+
+/* Adjust layout for wider screens (e.g., larger desktops) */
+@media screen and (min-width: 1024px) {
+  /* Increase the max-width of the content area */
+  .column.is-four-fifths {
+    width: 85%;  /* Increase content width to fill more space */
+  }
+
+  .image-container {
+    flex: 0 0 50%;  /* Image takes 50% on larger screens */
+  }
+
+  .text-container {
+    flex: 0 0 45%;  /* Text takes 45% on larger screens */
+    padding-left: 2rem;  /* Increase spacing between text and image */
+  }
+}
+
 // Main menu
 
 // Mobile drop-down menu styling

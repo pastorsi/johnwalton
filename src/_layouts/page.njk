@@ -2,36 +2,41 @@
 layout: "base"
 ---
 
-{% set images = images.about %}
+{% set images = images.about %}  <!-- Correctly set images for the About page -->
 
 <section class="section">
-    <div class="content">
-        <div class="columns">
-            <div class="column"></div>
-            <div class="column is-two-thirds">
-                <h1 class="title has-text-info">{{ title }}</h1>
-                {{ content | safe }}
-                {% if title == "About" %}
-                    <!-- Loop through sections -->
-                    {% for section in sections %}
-                    <div class="section">
-                        <h2 class="subtitle">{{ section.title }}</h2>
+  <div class="content">
+    <div class="columns is-multiline">
+      <!-- Reduce the left and right columns' width -->
+      <div class="column is-one-fifth"></div> <!-- Smaller left margin -->
+      <div class="column is-three-fifths"> <!-- Expand the content width -->
+        <h1 class="title has-text-info">{{ title }}</h1>
 
-                        <!-- Use images from JSON -->
-                        {% set imagePath = images[section.title | slugify] %}
-                        {% if imagePath %}
-                        <figure class="image">
-                            <img src="{{ imagePath }}" alt="{{ section.title }} Image">
-                        </figure>
-                        {% endif %}
+        <!-- Loop through sections -->
+        {% for section in sections %}
+          <div class="section">
+            <div class="flex-container">
+              <!-- Use images from JSON -->
+              {% set imagePath = images[section.title | slugify] %}
 
-                        <!-- Section Content -->
-                        <p>{{ section.content }}</p>
-                    </div>
-                    {% endfor %}
-                {% endif %}
+              <!-- Image on the left -->
+              {% if imagePath %}
+                <figure class="image-container">
+                  <img src="{{ imagePath }}" alt="{{ section.title }} Image">
+                </figure>
+              {% endif %}
+
+              <!-- Text on the right -->
+              <div class="text-container">
+                <h2 class="subtitle">{{ section.title }}</h2>
+                <p>{{ section.content }}</p>
+              </div>
             </div>
-            <div class="column"></div>
-        </div>
+          </div>
+        {% endfor %}
+        
+      </div>
+      <div class="column is-one-fifth"></div> <!-- Smaller right margin -->
     </div>
+  </div>
 </section>
