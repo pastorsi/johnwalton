@@ -43,6 +43,25 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
     }
 }
 
+// Control the image size and make them responsive, ensuring that they fit within the layout without overwhelming the page.
+
+figure.image img {
+  width: 50%;   /* Set a percentage or fixed width */
+  max-width: 600px; /* Ensure images don’t exceed a maximum size */
+  height: auto;     /* Maintain the aspect ratio of the image */
+  border-radius: 5px; /* Optional: Adds a slight rounding to soften the image look */
+  display: block;   /* Ensure the image is treated as a block-level element */
+  margin: 0 auto;   /* Center the image horizontally */
+}
+@media screen and (max-width: 768px) {
+  figure.image img {
+    max-width: 90%;  /* Reduce the width for smaller screens */
+  }
+}
+figure.image {
+  margin-bottom: 2rem; /* Space out the images from the text below */
+}
+
 // style adjustments following the Sutton Cox-inspired minimalist design
 
 // Typography adjustments
