@@ -102,19 +102,19 @@ figure.image img {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
-  padding: 0 1.5rem;  /* Add padding for spacing */
+  padding: 0 1.5rem;
 }
 
 /* Image container - allow it to take up more width */
 .image-container {
-  flex: 0 0 45%;  /* Increase image width to 45% */
+  flex: 0 0 45%;
   max-width: 100%;
 }
 
 /* Text container - allow it to take up more width */
 .text-container {
-  flex: 0 0 50%;  /* Increase text width to 50% */
-  padding-left: 1.5rem;  /* Increase spacing between text and image */
+  flex: 0 0 50%;
+  padding-left: 1.5rem;
 }
 
 /* Ensure images scale well */
@@ -128,33 +128,22 @@ figure.image img {
 @media screen and (max-width: 768px) {
   .flex-container {
     flex-direction: column;  /* Stack the image and text vertically */
-    align-items: flex-start;
+    align-items: center;  /* Center-align the image and text */
   }
 
   .image-container, .text-container {
     width: 100%;  /* Make both image and text take full width */
-    margin-bottom: 1.5rem;
+    max-width: 100%;  /* Ensure they don't exceed container size */
+    margin-bottom: 1.5rem;  /* Add spacing between the image and text */
   }
 
   .text-container {
-    padding-left: 0;
-  }
-}
-
-/* Adjust layout for wider screens (e.g., larger desktops) */
-@media screen and (min-width: 1024px) {
-  /* Increase the max-width of the content area */
-  .column.is-four-fifths {
-    width: 85%;  /* Increase content width to fill more space */
+    padding-left: 0;  /* Remove left padding for the text on mobile */
+    text-align: center;  /* Center-align text for a clean look */
   }
 
-  .image-container {
-    flex: 0 0 50%;  /* Image takes 50% on larger screens */
-  }
-
-  .text-container {
-    flex: 0 0 45%;  /* Text takes 45% on larger screens */
-    padding-left: 2rem;  /* Increase spacing between text and image */
+  .image-container img {
+    margin: 0 auto;  /* Center the image */
   }
 }
 
