@@ -43,6 +43,27 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
     }
 }
 
+// Logo
+/* Logo styling */
+.navbar-brand .image {
+  display: flex;
+  align-items: center; /* Vertically center the logo */
+}
+
+.navbar-brand .logo-img {
+  max-height: 70px; /* Maintain a reasonable size for the logo */
+  height: auto; /* Keep the aspect ratio intact */
+  max-width: 100%;
+  vertical-align: middle; /* Center it within the navbar */
+}
+
+/* Ensure the logo scales well on smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar-brand .logo-img {
+    max-height: 50px; /* Adjust the logo size on mobile */
+  }
+}
+
 // Control the image size and make them responsive, ensuring that they fit within the layout without overwhelming the page.
 
 figure.image img {

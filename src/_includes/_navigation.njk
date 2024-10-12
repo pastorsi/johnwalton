@@ -2,8 +2,8 @@
     <!-- logo / brand -->
     <div class="navbar-brand">
         <a href="/" class="navbar-item">
-            <figure class="image is-64x64">
-                <img src="/assets/images/logo.png" alt="Site logo" style="max-height: 70px;" class="py-2 px-2">
+            <figure class="image">
+                <img src="/assets/images/favicon.svg" alt="Site logo" class="logo-img">
             </figure>
         </a>
         <a class="navbar-burger" id="burger">
@@ -16,7 +16,6 @@
         <div class="navbar-end">
             {% for link in navigationLinks %}
                 {% if link.children %}
-                    <!-- Nested dropdown for items with children -->
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link" aria-expanded="false">
                             <span class="icon-text">
@@ -35,7 +34,6 @@
                         </div>
                     </div>
                 {% else %}
-                    <!-- Regular menu item -->
                     <a href="{{ link.url }}" class="navbar-item">
                         <span class="icon-text">
                             {% if link.icon %}
