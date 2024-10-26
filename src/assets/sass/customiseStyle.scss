@@ -64,6 +64,143 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
   }
 }
 
+// Hero styling for Homepage
+
+.hero {
+  position: relative;
+  height: 100vh; // Full viewport height
+  overflow: hidden; // Ensures content doesn’t spill outside hero bounds
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f0f4f8;
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; // Stacking order for background
+  }
+
+  .hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; // Stacking order for overlay image
+  }
+
+  .hero-overlay img {
+    width: 80%;
+    max-width: 800px;
+    opacity: 0.7;
+  }
+
+  .hero-text {
+    position: relative; // Ensure text sits within the hero’s flow
+    z-index: 3; // Highest stacking order for text overlay
+  }
+  .hero-text p {
+    color: #f2c94c; 
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432);
+    padding-top: 5rem;
+  }
+}
+
+.introduction-section {
+  margin: 3rem;
+  font-size: 1.1rem;
+}
+
+// Scroll Animation
+
+.introduction-section {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+// Call to Action button / section
+
+.call-to-action {
+  margin-bottom: 5rem; 
+  padding: 3rem 1.5rem;
+  background-size: cover;
+  background-position: center;
+
+.content h3 {
+  color: #1f3c88; // Navy Blue for CTA
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.432);
+}
+
+  .button.is-primary {
+    background-color: #f2c94c;
+    color: #333;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Carousel styling
+
+.testimonials {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  max-width: 800px; // Limits the total width on larger screens
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  max-width: 700px; // Sets a maximum width for text readability
+  box-sizing: border-box;
+  padding: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.carousel-item blockquote {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 600px; // Further limits width for readability
+}
+
+.carousel-item cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+}
+
 // Control the image size and make them responsive, ensuring that they fit within the layout without overwhelming the page.
 
 figure.image img {
@@ -88,7 +225,7 @@ figure.image {
 // Typography adjustments
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  color: #333;
+  color: #1f3c88; // Navy Blue for CTA
   font-weight: 700;
 }
 

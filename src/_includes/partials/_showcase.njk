@@ -1,0 +1,11 @@
+<section class="showcase">
+  <div class="columns is-multiline">
+    {% for img in images.showcase %}
+    <div class="column is-one-third">
+      <figure class="image">
+        <img src="{{ img }}" alt="Showcase Image">
+      </figure>
+    </div>
+    {% endfor %}
+  </div>
+</section>

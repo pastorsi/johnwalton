@@ -1,15 +1,18 @@
 ---
 layout: "base"
+title: "Home"
 ---
 
-<section class="section">
-    <div class="content">
-        <div class="columns">
-            <div class="column"></div>
-            <div class="column is-two-thirds">
-                {{ content | safe }}
-            </div>
-            <div class="column"></div>
-        </div>
+{% include "_hero.njk" %}
+
+<section class="section introduction-section">
+  <div class="columns">
+    <div class="column is-two-thirds">
+      {{ content | safe }}
     </div>
+  </div>
 </section>
+
+{% include "partials/_CTA.njk" %}
+{% include "partials/_showcase.njk" %}
+{% include "partials/_testimonials.njk" %}

@@ -1,0 +1,10 @@
+<section class="testimonials">
+  <div class="carousel">
+    {% for testimonial in testimonials %}
+    <div class="carousel-item">
+      <blockquote>{{ testimonial.content }}</blockquote>
+      <cite>- {{ testimonial.contributor }}</cite>
+    </div>
+    {% endfor %}
+  </div>
+</section>

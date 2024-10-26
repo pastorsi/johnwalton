@@ -4,5 +4,10 @@
       "development": "/assets/images/development.jpg",
       "our-story": "/assets/images/our_story.jpg",
       "our-business-model": "/assets/images/business_model.jpg"
-    }
-  }
+    },
+    "showcase": [
+      "/assets/images/georgian_portico.jpg",
+      "/assets/images/georgian_property.jpg",
+      "/assets/images/georgian_farmhouse.jpg"
+    ] 
+}
