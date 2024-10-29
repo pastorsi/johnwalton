@@ -1,80 +1,161 @@
 @charset "utf-8";
 
-// Import a Google Font
+// Import Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
-// Set your brand colors
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$green: #0097a7;
+// Define Color Scheme: Elegant and Technical
+$primary-color: #8A4D76; // Purple
+$secondary-color: #0097a7; // Green
+$accent-color: #f2c94c; // Light Gold
+$background-light: #EFF0EB; // Light Beige
+$background-dark: #D0D1CD; // Darker Beige
+$text-dark: #333333; // Dark text
+$text-light: #f0f4f8; // Light text
+$link-color: #FA7C91; // Pink
 
-// Update Bulma's global variables
-$family-sans-serif: "Montserrat", "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$success: $green;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
+// Navbar and Menu Colors for Elegant and Technical theme
+$navbar-background-color: #1f3c88; // Dark navy background for navbar
+$nav-text-color: #ffffff; // White text for navbar links
+$nav-hover-text-color: #f0f4f8; // Hover color for navbar links
+$dropdown-background-color: #24305e; // Dark navy for dropdown background
+$dropdown-text-color: #f0f4f8; // Light text color for dropdown items
+$dropdown-hover-background: #3e5c94; // Hover background color for dropdown items
+$dropdown-hover-text-color: #ffffff; // White hover text color for dropdown items
 
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
+// Typography
+$family-primary: "Montserrat", sans-serif;
+$family-secondary: "Nunito", sans-serif;
 
-/* Override Bulma variables */
-$card-radius: 10px; /* Adjust the corner radius as per your preference */
-$card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 10, 10, 0.07); /* Adjust shadow properties as needed */
+// Link and Text Colors
+$link: $link-color;
+$link-hover: darken($link-color, 10%);
+$text-strong: $text-dark;
+$text-light: #f0f4f8; // Light text color for dark backgrounds
 
-.navbar-dropdown {
-    background-color: $beige-lighter;
-    a.navbar-item {
-      color: $green;
-      &:hover {
-        background-color: $green;
-        color: white;
-      }
-    }
+// Font Customizations
+$family-sans-serif: $family-secondary;
+$headings-family: $family-primary;
+
+// Import Bulma with overrides applied
+@import "../../../mybulma/bulma.sass";
+
+// Base Styling for Body and Sections
+body {
+  background-color: $background-light;
+  color: $text-dark;
+  font-family: $family-sans-serif;
+  line-height: 1.7;
 }
 
-// Logo
-/* Logo styling */
-.navbar-brand .image {
-  display: flex;
-  align-items: center; /* Vertically center the logo */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-family;
+  color: $primary-color;
+  font-weight: 700;
 }
 
-.navbar-brand .logo-img {
-  max-height: 70px; /* Maintain a reasonable size for the logo */
-  height: auto; /* Keep the aspect ratio intact */
-  max-width: 100%;
-  vertical-align: middle; /* Center it within the navbar */
-}
-
-/* Ensure the logo scales well on smaller screens */
-@media screen and (max-width: 768px) {
-  .navbar-brand .logo-img {
-    max-height: 50px; /* Adjust the logo size on mobile */
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover;
   }
 }
 
-// Hero styling for Homepage
+.section {
+  padding: 2rem 0;
+}
 
+// Navbar styling for all views
+.navbar {
+  background-color: $navbar-background-color;
+}
+
+.navbar .navbar-item,
+.navbar .navbar-link {
+  color: $navbar-item-color;
+}
+
+.navbar .navbar-link.is-active,
+.navbar-item:hover,
+.navbar-link:hover {
+  background-color: $accent-color;
+  color: $navbar-item-hover-color;
+}
+
+// Navbar Menu Styling for Elegant and Technical Theme
+#nav-links.navbar-menu {
+  background-color: $navbar-background-color; // Use our Elegant and Technical navbar background color
+}
+
+// Dropdown styling within navbar menu
+.navbar-dropdown {
+  background-color: $dropdown-background-color; // Use custom dropdown background
+}
+
+// Ensure mobile menu background matches theme
+@media screen and (max-width: 1024px) {
+  #nav-links.navbar-menu {
+    background-color: $navbar-background-color; // Consistent background color for mobile menu
+  }
+}
+
+// Dropdown menu styling for desktop and mobile
+.navbar-dropdown {
+  background-color: $navbar-background-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  a.navbar-item {
+    color: $text-light;
+  }
+  
+  a.navbar-item:hover {
+    background-color: darken($navbar-background-color, 10%);
+    color: $text-light;
+  }
+}
+
+// Burger menu (mobile) specific styling
+.navbar-burger {
+  color: $navbar-item-color;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-menu {
+    background-color: $navbar-background-color;
+  }
+
+  // Dropdown items within mobile menu
+  .navbar-item.has-dropdown .navbar-dropdown {
+    background-color: darken($navbar-background-color, 5%);
+  }
+
+  .navbar-item.has-dropdown .navbar-dropdown a.navbar-item:hover {
+    background-color: darken($navbar-background-color, 10%); 
+  }
+}
+
+// Logo Styling
+.navbar-brand .image {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo-img {
+  max-height: 70px;
+  max-width: 100%;
+}
+
+// Hero Section Styling
 .hero {
   position: relative;
-  height: 100vh; // Full viewport height
-  overflow: hidden; // Ensures content doesn’t spill outside hero bounds
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #f0f4f8;
+  background-color: $background-light; // Or use $background-dark based on the context
 
   .hero-background {
     position: absolute;
@@ -82,7 +163,7 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; // Stacking order for background
+    z-index: 1;
   }
 
   .hero-background img {
@@ -94,77 +175,66 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
 
   .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2; // Stacking order for overlay image
-  }
-
-  .hero-overlay img {
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     width: 80%;
     max-width: 800px;
+    z-index: 2;
     opacity: 0.7;
   }
 
   .hero-text {
-    position: relative; // Ensure text sits within the hero’s flow
-    z-index: 3; // Highest stacking order for text overlay
-  }
-  .hero-text p {
-    color: #f2c94c; 
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $accent-color;
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432);
-    padding-top: 5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    z-index: 3;
   }
 }
 
-.introduction-section {
-  margin: 3rem;
-  font-size: 1.1rem;
-}
-
-// Scroll Animation
-
-.introduction-section {
-  animation: fadeIn 2s ease-in;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-// Call to Action button / section
-
+// Call-to-Action Section
 .call-to-action {
-  margin-bottom: 5rem; 
-  padding: 3rem 1.5rem;
+  background-image: url('/assets/images/blueprint_background.png');
   background-size: cover;
-  background-position: center;
+  padding: 3rem 1.5rem;
+  text-align: center;
 
-.content h3 {
-  color: #1f3c88; // Navy Blue for CTA
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.432);
-}
+  h3 {
+    color: $primary-color;
+  }
 
   .button.is-primary {
-    background-color: #f2c94c;
-    color: #333;
-    border: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background-color: $accent-color;
+    color: $text-dark;
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
   }
 }
 
-// Carousel styling
+// Footer Styling
+.footer {
+  background-color: darken($background-light, 5%); 
 
+  color: $text-dark;
+  padding: 2rem 0;
+  text-align: center;
+
+  a {
+    color: $link-color;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+// Carousel Styling
 .testimonials {
   overflow: hidden;
-  position: relative;
-  width: 100%;
   display: flex;
   justify-content: center;
   padding: 2rem 0;
@@ -173,88 +243,21 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  max-width: 800px; // Limits the total width on larger screens
+  max-width: 800px;
   width: 100%;
 }
 
 .carousel-item {
   min-width: 100%;
-  max-width: 700px; // Sets a maximum width for text readability
-  box-sizing: border-box;
+  max-width: 700px;
   padding: 1.5rem;
   text-align: center;
   margin: 0 auto;
-}
-
-.carousel-item blockquote {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin: 0 auto;
-  max-width: 600px; // Further limits width for readability
 }
 
-.carousel-item cite {
-  display: block;
-  margin-top: 1rem;
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-// Control the image size and make them responsive, ensuring that they fit within the layout without overwhelming the page.
-
-figure.image img {
-  width: 50%;   /* Set a percentage or fixed width */
-  max-width: 600px; /* Ensure images don’t exceed a maximum size */
-  height: auto;     /* Maintain the aspect ratio of the image */
-  border-radius: 5px; /* Optional: Adds a slight rounding to soften the image look */
-  display: block;   /* Ensure the image is treated as a block-level element */
-  margin: 0 auto;   /* Center the image horizontally */
-}
-@media screen and (max-width: 768px) {
-  figure.image img {
-    max-width: 90%;  /* Reduce the width for smaller screens */
-  }
-}
-figure.image {
-  margin-bottom: 2rem; /* Space out the images from the text below */
-}
-
-// style adjustments following the Sutton Cox-inspired minimalist design
-
-// Typography adjustments
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  color: #1f3c88; // Navy Blue for CTA
-  font-weight: 700;
-}
-
-body, p {
-  font-family: "Nunito", sans-serif;
-  color: #555;
-  line-height: 1.7;
-}
-
-// Section spacing
-.section {
-  padding: 2rem 0; // Add generous spacing between sections for clarity
-}
-
-// Image styling
-figure.image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px; // Add some rounding to soften the visuals
-}
-
-// Layout adjustments for main content
-.column.is-half {
-  padding: 1.5rem;
-}
-
-// Page layout - a two-column layout for larger screens and a stacked layout for mobile devices
-
-/* Flex container for images and text */
+// Page Layout for Two-Column and Mobile Views
 .flex-container {
   display: flex;
   align-items: center;
@@ -263,96 +266,28 @@ figure.image img {
   padding: 0 1.5rem;
 }
 
-/* Image container - allow it to take up more width */
 .image-container {
   flex: 0 0 45%;
   max-width: 100%;
 }
 
-/* Text container - allow it to take up more width */
 .text-container {
   flex: 0 0 50%;
   padding-left: 1.5rem;
 }
 
-/* Ensure images scale well */
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Responsive behavior: Stack on smaller screens */
 @media screen and (max-width: 768px) {
   .flex-container {
-    flex-direction: column;  /* Stack the image and text vertically */
-    align-items: center;  /* Center-align the image and text */
+    flex-direction: column;
+    align-items: center;
   }
 
   .image-container, .text-container {
-    width: 100%;  /* Make both image and text take full width */
-    max-width: 100%;  /* Ensure they don't exceed container size */
-    margin-bottom: 1.5rem;  /* Add spacing between the image and text */
-  }
-
-  .text-container {
-    padding-left: 0;  /* Remove left padding for the text on mobile */
-    text-align: center;  /* Center-align text for a clean look */
-  }
-
-  .image-container img {
-    margin: 0 auto;  /* Center the image */
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
   }
 }
 
-// Main menu
-
-// Mobile drop-down menu styling
-.navbar-item.has-dropdown:hover .navbar-dropdown {
-    display: block;
-}
-  
-.navbar-burger {
-    color: $green;
-}
-
-// Additional mobile menu responsiveness
-@media screen and (max-width: 1024px) {
-  // Ensure the menu drops independently below the navbar
-  .navbar-menu {
-    position: absolute; // Detach the menu from the navbar itself
-    top: 100%; // Position it directly below the navbar
-    left: 0;
-    width: 100%; // Make sure it spans the full width of the screen
-    background-color: $beige-lighter; // Ensure it has a distinct background
-    z-index: 999; // Make sure it's above other elements
-    display: none; // Hidden by default
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Add a subtle shadow for clarity
-  }
-
-  // Show the menu when the burger icon is active
-  .navbar-burger.is-active + .navbar-menu {
-    display: block;
-  }
-
-  // Ensure dropdowns within the menu behave independently
-  .navbar-item.has-dropdown .navbar-dropdown {
-    position: relative; // Dropdowns are relative to their parent menu item
-    top: 0; // Reset top positioning for dropdown items
-    left: 0;
-    display: none; // Hidden by default
-  }
-
-  // Show dropdown items when the parent is active
-  .navbar-item.has-dropdown.is-active .navbar-dropdown {
-    display: block;
-  }
-
-  // Prevent the navbar from expanding when the menu is open
-  .navbar {
-    position: relative;
-    height: auto; // Ensure the height remains unaffected
-  }
-}
-  
 @import "../../../mybulma/bulma.sass";
