@@ -80,9 +80,7 @@ function delay(ms) {
     try {
       // Possible locations for the favicon file
       const possiblePaths = [
-        'src/assets/images/flavicon.svg',
         'src/assets/images/favicon.svg',
-        'assets/images/flavicon.svg',
         'assets/images/favicon.svg'
       ];
   

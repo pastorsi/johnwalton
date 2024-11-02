@@ -5,43 +5,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
-// Set your brand colors
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$green: #0097a7;
+// Set your brand colors, that is, your color schemes
 
-// Update Bulma's global variables
-$family-sans-serif: "Montserrat", "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$success: $green;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
+// Set your initial variables of the color scheme
 
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
+$navy-blue: #1F3C88;
+$steel-blue: #4B6D96;
+$steel-blue-light: #93aecf; // used for footer
+$light-gold: #F2C94C;
+$light-gray: #F0F4F8;
+
+// Set your derived variables for the color scheme
+
+$warning: $light-gold;
+$info: $navy-blue;
+$primary: $steel-blue;
+$scheme-main: $light-gray;
 
 /* Override Bulma variables */
 $card-radius: 10px; /* Adjust the corner radius as per your preference */
 $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 10, 10, 0.07); /* Adjust shadow properties as needed */
 
-.navbar-dropdown {
-    background-color: $beige-lighter;
-    a.navbar-item {
-      color: $green;
-      &:hover {
-        background-color: $green;
-        color: white;
-      }
-    }
-}
 
 // Logo
 /* Logo styling */
@@ -74,7 +58,6 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #f0f4f8;
 
   .hero-background {
     position: absolute;
@@ -105,7 +88,7 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
   }
 
   .hero-overlay img {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     opacity: 0.7;
   }
@@ -115,9 +98,9 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
     z-index: 3; // Highest stacking order for text overlay
   }
   .hero-text p {
-    color: #f2c94c; 
+    color: $warning; 
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432);
+    text-shadow: 2px 2px 4px $info;
     padding-top: 5rem;
   }
 }
@@ -141,21 +124,16 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
 // Call to Action button / section
 
 .call-to-action {
-  margin-bottom: 5rem; 
-  padding: 3rem 1.5rem;
   background-size: cover;
   background-position: center;
 
-.content h3 {
-  color: #1f3c88; // Navy Blue for CTA
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.432);
-}
 
-  .button.is-primary {
-    background-color: #f2c94c;
-    color: #333;
+  .button {
     border: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  .button:hover {
+    background-color: $warning !important;
   }
 }
 
@@ -202,19 +180,29 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
 }
 
 // Control the image size and make them responsive, ensuring that they fit within the layout without overwhelming the page.
-
+// Image styling
 figure.image img {
-  width: 50%;   /* Set a percentage or fixed width */
-  max-width: 600px; /* Ensure images don’t exceed a maximum size */
-  height: auto;     /* Maintain the aspect ratio of the image */
-  border-radius: 5px; /* Optional: Adds a slight rounding to soften the image look */
+  max-width: 70%;
+  height: auto;
+  border-radius: 5px; // Add some rounding to soften the visuals
   display: block;   /* Ensure the image is treated as a block-level element */
   margin: 0 auto;   /* Center the image horizontally */
 }
+
 @media screen and (max-width: 768px) {
   figure.image img {
     max-width: 90%;  /* Reduce the width for smaller screens */
   }
+  .hero-overlay img {
+    width: 100%;
+    max-width: 800px;
+    opacity: 0.9;
+  }
+
+  .hero-background img {
+    opacity: 0.9;
+  }
+
 }
 figure.image {
   margin-bottom: 2rem; /* Space out the images from the text below */
@@ -225,7 +213,7 @@ figure.image {
 // Typography adjustments
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  color: #1f3c88; // Navy Blue for CTA
+  color: $info;
   font-weight: 700;
 }
 
@@ -238,13 +226,6 @@ body, p {
 // Section spacing
 .section {
   padding: 2rem 0; // Add generous spacing between sections for clarity
-}
-
-// Image styling
-figure.image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px; // Add some rounding to soften the visuals
 }
 
 // Layout adjustments for main content
@@ -313,7 +294,6 @@ figure.image img {
 }
   
 .navbar-burger {
-    color: $green;
 }
 
 // Additional mobile menu responsiveness
@@ -324,7 +304,6 @@ figure.image img {
     top: 100%; // Position it directly below the navbar
     left: 0;
     width: 100%; // Make sure it spans the full width of the screen
-    background-color: $beige-lighter; // Ensure it has a distinct background
     z-index: 999; // Make sure it's above other elements
     display: none; // Hidden by default
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Add a subtle shadow for clarity
@@ -354,5 +333,8 @@ figure.image img {
     height: auto; // Ensure the height remains unaffected
   }
 }
-  
+
+  .footer {
+    background-color: $steel-blue-light !important;
+  }
 @import "../../../mybulma/bulma.sass";

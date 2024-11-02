@@ -7,4 +7,4 @@ function showNextTestimonial() {
   carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-setInterval(showNextTestimonial, 5000); // Change every 5 seconds
+setInterval(showNextTestimonial, 8000); // Change every 8 seconds
