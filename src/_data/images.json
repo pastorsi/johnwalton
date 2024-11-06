@@ -5,6 +5,13 @@
       "our-story": "/assets/images/our_story.jpg",
       "our-business-model": "/assets/images/business_model.jpg"
     },
+    "architectural-design": {
+      "architectural-design-services": "/assets/images/design-services.png",
+      "personalized-design-for-domestic-clients": "/assets/images/domestic-clients.png",
+      "expert-solutions-for-commercial-clients": "/assets/images/commercial-clients.png",
+      "comprehensive-service-with-quick-turnaround": "/assets/images/comprehensive-service.png",
+      "serving-gloucestershire-and-beyond": "/assets/images/gloucestershire-and-beyond.png"
+    },
     "showcase": [
       "/assets/images/georgian_property.jpg",
       "/assets/images/georgian_farmhouse.jpg",

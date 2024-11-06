@@ -15,15 +15,15 @@
         "children": [
             {
                 "text": "Architectural Design", 
-                "url": "/services/architectural-design/"
+                "url": "/architectural-design/"
             },
             {
                 "text": "Health & Safety", 
-                "url": "/services/health-safety/"
+                "url": "/health-safety/"
             },
             {
                 "text": "Specialist Construction", 
-                "url": "/services/specialist-construction/"
+                "url": "/specialist-construction/"
             }
         ]
     },

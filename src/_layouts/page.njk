@@ -2,7 +2,7 @@
 layout: "base"
 ---
 
-{% set images = images.about %}  <!-- Correctly set images for the About page -->
+{% set images = images[imageSet] or [] %}
 
 <section class="section">
   <div class="content">
@@ -34,7 +34,7 @@ layout: "base"
             </div>
           </div>
         {% endfor %}
-        
+        {% include "partials/_CTA.njk" %}
       </div>
       <div class="column is-one-tenth"></div> <!-- Smaller right margin -->
     </div>

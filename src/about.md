@@ -1,6 +1,7 @@
 ---
 layout: "page"
 title: "About"
+imageSet: "about"
 description: "Learn more about John Walton's services."
 sections:
   - title: "Introduction"
