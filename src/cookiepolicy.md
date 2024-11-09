@@ -5,11 +5,8 @@ description: "This Cookie Policy explains what cookies are and how MCEA use them
 eleventyExcludeFromCollections: true
 ---
 
-Cookie Policy
-=============
-
-Effective Date: 10-Jan-2024  
-Last Updated: 10-Jan-2024
+Effective Date: 10-Nov-2024  
+Last Updated: 10-Nov-2024
 
 ##### What are cookies?
 

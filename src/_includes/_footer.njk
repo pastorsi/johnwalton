@@ -1,8 +1,19 @@
 <footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
-      </br>&copy; Simon Measures {% year %}
-    </p>
+  <div class="content">
+    <div class="columns">
+      <div class="column">
+        <div class="foot-links ml-5">
+          <h6 class="is-size-6">Additional links:</h6>
+              {% for link in footerLinks %}
+                <a href="{{ link.url }}" class="pr-5">
+                  <span class="has-text-white">{{ link.text }}</span>
+                </a>
+              {% endfor %}
+        </div>
+      </div>
+      <div class="column has-text-centered has-text-dark is-two-thirds">
+        <p>Website created by Simon Measures - <a href="https://webshore.co.uk/" target="new_tab">Webshore</a> ({% year %})</p>
+      </div>
+    </div>
   </div>
 </footer>
