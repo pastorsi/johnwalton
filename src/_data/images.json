@@ -12,6 +12,13 @@
       "comprehensive-service-with-quick-turnaround": "/assets/images/comprehensive-service.png",
       "serving-gloucestershire-and-beyond": "/assets/images/gloucestershire-and-beyond.png"
     },
+    "specialist-construction": {
+      "tailored-solutions": "/assets/images/tailored-solutions.jpg",
+      "comprehensive-specification-writing": "/assets/images/specification-writing.jpg",
+      "expert-estimating-services": "/assets/images/estimating-services.jpg",
+      "precision-measured-surveys": "/assets/images/measured-surveys.jpg",
+      "nationwide-service": "/assets/images/nationwide-service.jpg"
+    },
     "showcase": [
       "/assets/images/georgian_property.jpg",
       "/assets/images/georgian_farmhouse.jpg",

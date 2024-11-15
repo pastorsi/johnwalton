@@ -13,7 +13,7 @@ This Privacy Policy describes the policies of John Walton Consulting, 10 Eagle M
 
 We may modify this Privacy Policy at any time without any prior notice to you and will post the revised Privacy Policy on the Service. The revised Policy will be effective 180 days from when the revised Policy is posted in the Service and your continued access or use of the Service after such time will constitute your acceptance of the revised Privacy Policy. We therefore recommend that you periodically review this page.
 
-1. How We Use Your Information:
+1. How We Use Your Information
     ----------------------------
 
     We will use the information that we collect about you for the following purposes:
@@ -41,12 +41,12 @@ We may modify this Privacy Policy at any time without any prior notice to you an
 
     To learn more about how we use these and your choices in relation to these tracking technologies, please refer to our [Cookie Policy.](www.wcultd.com/cookiepolicy)
 
-4. Security:
+4. Security
     ---------
 
     The security of your information is important to us and we will use reasonable security measures to prevent the loss, misuse or unauthorized alteration of your information under our control. However, given the inherent risks, we cannot guarantee absolute security and consequently, we cannot ensure or warrant the security of any information you transmit to us and you do so at your own risk.
 
-5. Third Party Links & Use Of Your Information:
+5. Third Party Links & Use Of Your Information
     --------------------------------------------
 
     Our Service may contain links to other websites that are not operated by us. This Privacy Policy does not address the privacy policy and other practices of any third parties, including any third party operating any website or service that may be accessible via a link on the Service. We strongly advise you to review the privacy policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
