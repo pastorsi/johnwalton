@@ -3,6 +3,7 @@
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 // Set your brand colors, that is, your color schemes
@@ -26,6 +27,9 @@ $scheme-main: $light-gray;
 $card-radius: 10px; /* Adjust the corner radius as per your preference */
 $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 10, 10, 0.07); /* Adjust shadow properties as needed */
 
+.navbar-title {
+  font-family: 'Playfair Display', sans-serif;
+}
 
 // Logo
 /* Logo styling */

@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: "Specialist Construction"
+title: "Specialist Construction Services"
 imageSet: "specialist-construction"
 permalink: "/specialist-construction/"
 description: "Discover more about John Walton's Specialist Construction services."

@@ -1,9 +1,11 @@
 {
     "about": {
-      "introduction": "/assets/images/introduction.jpg",
-      "development": "/assets/images/development.jpg",
       "our-story": "/assets/images/our_story.jpg",
-      "our-business-model": "/assets/images/business_model.jpg"
+      "our-approach": "/assets/images/our_approach.jpg",
+      "wide-range-of-expertise": "/assets/images/wide_range_of_expertise.jpg",
+      "values-you-can-trust": "/assets/images/values_you_can_trust.jpg",
+      "working-together": "/assets/images/working_together.jpg",
+      "looking-ahead": "/assets/images/looking_ahead.jpg"
     },
     "architectural-design": {
       "architectural-design-services": "/assets/images/design-services.png",
@@ -17,6 +19,13 @@
       "comprehensive-specification-writing": "/assets/images/specification-writing.jpg",
       "expert-estimating-services": "/assets/images/estimating-services.jpg",
       "precision-measured-surveys": "/assets/images/measured-surveys.jpg",
+      "nationwide-service": "/assets/images/nationwide-service.jpg"
+    },
+    "health-and-safety": {
+      "construction-health-and-safety-services": "/assets/images/construction-health-and-safety.jpg",
+      "comprehensive-cdm-advisory-services": "/assets/images/CDM-advisory-services.jpg",
+      "fire-risk-assessments-and-compliance": "/assets/images/fire-risk-assessments.jpg",
+      "tailored-health-and-safety-solutions": "/assets/images/health-and-safety-solutions.jpg",
       "nationwide-service": "/assets/images/nationwide-service.jpg"
     },
     "showcase": [
