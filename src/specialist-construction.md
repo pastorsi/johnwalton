@@ -7,7 +7,7 @@ description: "Discover more about John Walton's Specialist Construction services
 sections:
   - title: "Tailored Solutions"
     content: |
-      <p>John Walton’s Specialist Construction Service offers a wide range of professional services, including building specification writing, precise measured surveys, and comprehensive project estimates. Our approach ensures detailed, reliable, and high-quality documentation for every project, helping architects, surveyors, and self-build clients achieve their construction goals with confidence.</p>
+      <p>John Walton’s Specialist Construction Service offers a wide range of professional services, including building specification writing and comprehensive project estimates. Our approach ensures detailed, reliable, and high-quality documentation for every project, helping architects, surveyors, and self-build clients achieve their construction goals with confidence.</p>
 
   - title: "Comprehensive Specification Writing"
     content: |
@@ -24,14 +24,6 @@ sections:
       <ul>
         <li><strong>Project Estimation:</strong> Providing accurate and detailed cost assessments for construction projects.</li>
         <li><strong>Support for Architects and Surveyors:</strong> Offering reliable estimates that align with your project’s design and specifications.</li>
-      </ul>
-
-  - title: "Precision Measured Surveys"
-    content: |
-      <p>Accurate measurements are essential for any successful construction project. John Walton’s measured survey service delivers highly accurate, dimensionally precise drawings of existing buildings. We provide surveys tailored to any level of sophistication required by architects, designers, and project managers.</p>
-      <ul>
-        <li><strong>Measured Surveys:</strong> Offering precise and detailed surveys for existing structures, ensuring reliable data for project planning.</li>
-        <li><strong>Condition Surveys and Schedules of Dilapidations:</strong> Evaluating the condition of buildings and providing detailed reports for maintenance or renovation needs.</li>
       </ul>
 
   - title: "Nationwide Service"

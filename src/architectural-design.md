@@ -19,7 +19,7 @@ sections:
 
   - title: "Comprehensive service with quick turnaround"
     content: |
-      We pride ourselves on delivering design solutions efficiently. Following an in-depth, measured survey, we provide detailed drawings and plans within a short timeframe, enabling you to submit your planning application without delay.
+      We pride ourselves on delivering design solutions efficiently. We provide detailed drawings and plans within a short time-frame, enabling you to submit your planning application without delay.
 
   - title: "Serving Gloucestershire and Beyond"
     content: |

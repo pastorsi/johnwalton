@@ -20,7 +20,6 @@ sections:
         <li>Architectural design for both residential and commercial clients</li>
         <li>Quantity surveying and cost management</li>
         <li>Specification writing and contract management</li>
-        <li>Detailed measured surveys for accurate project planning</li>
       </ul>
       <p>This comprehensive suite of services enables John to guide clients smoothly through each stage of their project, ensuring a consistent and professional outcome.</p>
 

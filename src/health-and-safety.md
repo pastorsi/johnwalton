@@ -18,14 +18,6 @@ sections:
         <li>Assist in identifying and managing risks early in the project to minimize potential hazards.</li>
       </ul>
 
-  - title: "Fire Risk Assessments and Compliance"
-    content: |
-      <p>Construction projects often involve additional compliance challenges, including fire risk management. John Walton’s health and safety services extend to helping you:</p>
-      <ul>
-        <li>Conduct comprehensive <strong>Fire Risk Assessments</strong>, ensuring your project meets statutory fire safety requirements.</li>
-        <li>Address access-related civil liabilities, protecting you from potential legal disputes.</li>
-      </ul>
-
   - title: "Tailored Health and Safety Solutions"
     content: |
       <p>John understands that every project is unique. By offering tailored health and safety solutions, he helps you:</p>
