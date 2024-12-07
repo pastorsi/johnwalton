@@ -1,4 +1,4 @@
 node_modules
 /public
 /_site
-/.env
+/src/.env

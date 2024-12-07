@@ -3,6 +3,11 @@
             ref="{{ contactForm.formRef }}"
             method="{{ contactForm.method }}"
             action="{{ contactForm.action }}"
+            {% if env.ENVIRONMENT == 'development' %}
+              action="https://httpbin.org/post" <!-- Test endpoint -->
+            {% else %}
+              action="{{ contactForm.action }}"
+            {% endif %}
 >
 <div class="field">
   <input 
@@ -18,7 +23,7 @@
   <input 
     type="hidden"  
     name="redirect"
-    value="https://www.mcea.org.uk/thankyou"
+    value="https://www.wcultd.com/thankyou"
   />
 </div>
 {% for field in contactForm.fields %}
@@ -50,3 +55,13 @@
   <button class="{{ contactForm.submitButton.class }}" type="submit">{{ contactForm.submitButton.text }}</button>
 </form>
 <script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+  const contactForm = document.getElementById('contact_form');
+
+  contactForm.addEventListener('submit', function(event) {
+    // Allow the form to submit
+    setTimeout(() => {
+      contactForm.reset(); // Clear all fields after the form submission is processed
+    }, 1000); // Small delay to ensure submission occurs
+  });
+</script>
