@@ -1,16 +1,16 @@
 module.exports = {
-	title: "MCEA news and affairs",
-	url: "https://www.mcea.org.uk",
+	title: "John Walton Construction Services",
+	url: "https://www.wcultd.com",
 	language: "en",
-	description: "All the latest posts with news and event information for churches and ministries affiliated to MCEA.",
+	description: "The construction services John Walton provides",
 	author: {
-		name: "Simon Measures",
-		email: "enquiries@mcea.org.uk",
-		url: "https://www.mcea.org.uk/about/"
+		name: "John Walton",
+		email: "enquiries@wcultd.com",
+		url: "https://www.wcultd.com/about/"
 	},
     image: {
-        url: "https://www.mcea.org.uk/flavicon.svg",
-		title: "MCEA news and affairs",
-		link: "https://www.mcea.org.uk"
+        url: "https://www.wcultd.com/flavicon.svg",
+		title: "John Walton Construction Services",
+		link: "https://www.wcultd.com"
     }
 }
