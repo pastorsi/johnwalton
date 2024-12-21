@@ -17,7 +17,6 @@ const path = require('path');
 const { DateTime } = require('luxon');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const { exec } = require('child_process');
-const NOT_FOUND_PATH = "_site/404.html";
 
 module.exports = function(eleventyConfig) {
   // Passthrough Copy for assets
