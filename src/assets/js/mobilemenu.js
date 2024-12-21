@@ -4,6 +4,7 @@ const navbarMenu = document.querySelector('#nav-links');
 
 // Toggle the mobile menu (burger menu)
 burgerIcon.addEventListener('click', () => {
+  burgerIcon.classList.toggle('is-active');
   navbarMenu.classList.toggle('is-active');
 });
 
