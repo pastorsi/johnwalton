@@ -24,18 +24,6 @@ $info: $navy-blue;
 $primary: $steel-blue;
 $scheme-main: $light-gray;
 
-// Safari browser - browser-specific CSS reset for Safari to address common quirks
-
-@supports (-webkit-overflow-scrolling: touch) {
-  .navbar-brand {
-      justify-content: flex-start; /* Adjust Safari alignment */
-  }
-}
-
-html {
-  -webkit-text-size-adjust: 100%; /* Prevent text resizing */
-}
-
 // style adjustments following the Sutton Cox-inspired minimalist design
 
 // Typography adjustments
@@ -70,13 +58,6 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
   height: auto; /* Keep the aspect ratio intact */
   max-width: 100%;
   vertical-align: middle; /* Center it within the navbar */
-}
-
-/* Ensure the logo scales well on smaller screens */
-@media screen and (max-width: 768px) {
-  .navbar-brand .logo-img {
-    max-height: 50px; /* Adjust the logo size on mobile */
-  }
 }
 
 // Hero styling for Homepage
@@ -129,7 +110,8 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.31), 0 0px 0 1px rgba(10, 
     text-shadow: 2px 2px 4px $info;
   }
 
-/* Media query for mobile screens */
+/* Media query for mobile screens for hero */
+
 @media screen and (max-width: 768px) {
   .hero {
     height: 70vh; /* Reduce height on smaller screens */
@@ -277,10 +259,12 @@ figure.image {
 }
 
 /* Responsive behavior: Stack on smaller screens */
+
 @media screen and (max-width: 768px) {
   .flex-container {
     flex-direction: column;  /* Stack the image and text vertically */
     align-items: center;  /* Center-align the image and text */
+    gap: 0.5em;
   }
 
   .image-container, .text-container {
@@ -305,37 +289,27 @@ figure.image {
 .navbar-item.has-dropdown:hover .navbar-dropdown {
     display: block;
 }
-  
-.navbar-burger {
-}
 
+// Start of hamburger menu fix for Safari on iPhone 
 .navbar-brand {
+  align-items: center;
   display: flex;
   flex-shrink: 0;
-  flex-grow: 1; // Ensure navbar items grow proportionally
-  flex-direction: row;
-  align-items: center;
+  gap: 1em;
   min-height: 3.25rem;
-  justify-content: center; // Align the logo and burger icon horizontally
-  padding: 0.5rem 1rem; // Adjust padding for smaller screens
-}
-
-.navbar-title {
-  flex-grow: 1; // Allow the title to grow and occupy available space
-  text-align: center; // Center-align the text
-  font-size: 1.25rem; // Reduce the title size for mobile screens
-}
-
-.navbar-burger {
-  display: flex; // Ensure it's displayed as a flex item
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0; // Prevent it from shrinking
-  margin-left: auto; // Push the burger menu to the right
-  z-index: 10; // Ensure it appears above other elements
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 // Additional mobile menu responsiveness
+
+/* Ensure the logo scales well on smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar-brand .logo-img {
+    max-height: 50px; /* Adjust the logo size on mobile */
+  }
+}
+
 @media screen and (max-width: 1024px) {
   // Ensure the menu drops independently below the navbar
   .navbar-menu {
@@ -347,6 +321,7 @@ figure.image {
     display: none; // Hidden by default
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Add a subtle shadow for clarity
   }
+
   // Show the menu when the burger icon is active
   .navbar-burger.is-active + .navbar-menu {
     display: block;
@@ -371,30 +346,6 @@ figure.image {
     height: auto; // Ensure the height remains unaffected
   }
 }
-
-@media screen and (max-width: 768px) {
-  .navbar-menu {
-    background-color: $navy-blue; // Match the navbar background color
-    display: none; // Hidden by default
-    position: absolute;
-    top: 100%; // Position it just below the navbar
-    left: 0;
-    width: 100%; // Full width for mobile
-    z-index: 9;
-  }
-
-  .navbar-menu.is-active {
-    display: block; // Show menu when active
-  }
-
-  .navbar-title {
-      font-size: 1.25rem;
-  }
-
-  .navbar-brand .image {
-    padding: 0; // Remove padding
-  }
-}  
 
   .footer {
     background-color: $steel-blue-light !important;
