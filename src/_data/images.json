@@ -30,5 +30,11 @@
       "/assets/images/georgian_property.jpg",
       "/assets/images/georgian_farmhouse.jpg",
       "/assets/images/georgian_portico.jpg"
+    ],
+    "featured-project": [
+      "/assets/images/before-the-extension_from-the-front.jpg",
+      "/assets/images/after_the-extension-from-the-front.jpg",
+      "/assets/images/before-the-extension_from-the-side.jpg",
+      "/assets/images/after_extension-from-the-side.jpg"
     ] 
 }

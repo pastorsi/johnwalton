@@ -347,6 +347,91 @@ figure.image {
   }
 }
 
+// Before and After Image Slider
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* Default starting position */
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  transition: width 3s ease-in-out; /* Slower and more natural */
+}
+
+.slider-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: white;
+  cursor: ew-resize;
+  z-index: 3; /* Ensures it's above images */
+  transform: translateX(-50%);
+  transition: left 3s ease-in-out; /* Syncs handle movement */
+}
+
+.slider-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slider-overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-container {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .slider-handle {
+    width: 3px;
+  }
+}
+
+// Featured product text
+
+.project-description {
+  display: block;
+  max-width: 800px; /* Matches the max-width of the slider */
+  margin: 2rem auto; /* Centers it and adds space */
+  text-align: left; /* Align text to the left for readability */
+}
+
+.project-description p {
+  font-size: 1.1rem; /* Slightly larger font for readability */
+  line-height: 1.6; /* Improve spacing between lines */
+  color: #333; /* Ensure good contrast */
+}
+
+/* Ensure it remains responsive on smaller screens */
+
+@media screen and (max-width: 768px) {
+.project-description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  }
+}
+
+
   .footer {
     background-color: $steel-blue-light !important;
   }
