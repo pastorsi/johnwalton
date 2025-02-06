@@ -348,7 +348,7 @@ figure.image {
 }
 
 // Before and After Image Slider
-
+/* Container for the slider */
 .slider-container {
   position: relative;
   width: 100%;
@@ -359,44 +359,59 @@ figure.image {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.slider-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%; /* Default starting position */
-  height: 100%;
-  overflow: hidden;
-  z-index: 2;
-  transition: width 3s ease-in-out; /* Slower and more natural */
+/* Overlay that contains the after-image */
+
+/* Keyframes for scaling animation with pauses */
+@keyframes scaleWithPauses {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
-.slider-handle {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  background: white;
-  cursor: ew-resize;
-  z-index: 3; /* Ensures it's above images */
-  transform: translateX(-50%);
-  transition: left 3s ease-in-out; /* Syncs handle movement */
-}
-
-.slider-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
+/* Applying the animation to the after-image */
 .slider-overlay img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
+  transform: scale(0); /* Start scaled down */
+  transform-origin: top left; /* Scale from top-left corner */
+  animation: scaleWithPauses 20s ease-in-out infinite; /* 20s total duration */
 }
 
+/* Images within the slider */
+.slider-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* After-image styling */
+.slider-overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: scale(0); /* Start scaled down */
+  transform-origin: top left; /* Scale from top-left corner */
+  transition: transform 2s ease-in-out; /* Smooth transition */
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .slider-container {
     max-width: 100%;
