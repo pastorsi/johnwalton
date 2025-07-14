@@ -424,6 +424,11 @@ figure.image {
 
 // Featured product text
 
+.box ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
 .project-description {
   display: block;
   max-width: 800px; /* Matches the max-width of the slider */
@@ -435,6 +440,11 @@ figure.image {
   font-size: 1.1rem; /* Slightly larger font for readability */
   line-height: 1.6; /* Improve spacing between lines */
   color: #333; /* Ensure good contrast */
+}
+
+.project-description ul {
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
 /* Ensure it remains responsive on smaller screens */
