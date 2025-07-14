@@ -11,11 +11,18 @@ sections:
 
   - title: "Comprehensive Specification Writing"
     content: |
-      <p>Our specification writing service is designed to provide clear, precise documentation tailored to your project’s unique needs. We specialize in:</p>
+      <p>Our specification writing service is designed to provide clear, precise documentation tailored to your project’s unique needs. We specialise in:</p>
       <ul>
-        <li><strong>Contract Preliminaries:</strong> Establishing clear project guidelines and expectations from the outset.</li>
-        <li><strong>Schedules of Work:</strong> Outlining detailed tasks and responsibilities to streamline project execution.</li>
-        <li><strong>NBS Specifications:</strong> Delivering full National Building Specification (NBS) standards for a consistent, high-quality result.</li>
+        <li><strong>Listed Buildings:</strong> Crafting detailed specifications that honor the historical and architectural significance of listed buildings, ensuring compliance with preservation standards.</li>
+        <li><strong>New Dwellings:</strong> Developing precise specifications for new residential constructions, from single-family homes to expansive residential villages.</li>
+        <li><strong>Renovations:</strong> Providing clear and detailed specifications for renovation projects, ensuring that all aspects are meticulously planned and executed.</li>
+        <li><strong>Accessible Dwellings:</strong>Ensuring that specifications for accessible dwellings meet all necessary standards, promoting inclusivity and functionality.</li>
+        <li><strong>Multi-Storey Apartments:</strong> Creating comprehensive specifications for multi-storey apartment complexes, addressing structural, aesthetic, and functional elements.</li>
+        <li><strong>Cinemas and Theatres:</strong> Specialising in the unique requirements of entertainment venues, ensuring optimal acoustics, seating arrangements, and safety protocols.</li>
+        <li><strong>Warehouses:</strong> Developing specifications that maximize storage efficiency, accessibility, and compliance with industrial standards.</li>
+        <li><strong>Retail Fit-Outs:</strong> Tailoring specifications for retail spaces to enhance customer experience and operational efficiency.</li>
+        <li><strong>Sports Facilities:</strong> Providing detailed specifications for sports halls and cricket pavilions, ensuring they meet the specific needs of athletes and spectators alike.</li>
+        <li><strong>Libraries:</strong> Crafting specifications that create functional and inviting spaces for learning and community engagement.</li>
       </ul>
 
   - title: "Expert Estimating Services"
